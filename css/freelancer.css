@@ -232,6 +232,11 @@ section.success {
     color: #fff;
 }
 
+#portfolioModal6{
+    width:20%; /* you can use % */
+    height: 20%;
+}
+
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
     margin-top: -12px;
 }
