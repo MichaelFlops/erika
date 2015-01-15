@@ -1,5 +1,17 @@
 if (Meteor.isClient) {
   // counter starts at 0
+ Template.contact.events({
+    'submit form': function( event ){   // also tried just 'submit', both work for me!
+      console.log( 'Submitting form!' );
+      event.preventDefault();
+      event.stopPropagation();
+      return false; 
+    }
+  });
+ $("contact").submit(function (e) {
+      e.preventDefault();
+      alert("FUCKYEA");
+});
   Session.setDefault("counter", 0);
 
   Template.hello.helpers({
