@@ -3,14 +3,14 @@
 </head>
 
 <body>
-    {{> topBar}}
-    {{> header}}
-    {{> about}}
-	{{> portfolio}}
-	{{> contact}}
+    {{home}}
+    <!-- {{land}} -->
+    <!-- {{> about}} -->
+	<!-- {{portfolio}} -->
+	<!-- {{contact}} -->
 </body>
 
-<template name ="topBar">
+<template name ="home">
 <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -29,16 +29,16 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a href="#page-top"></a>
+                        <a href="/"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="/portfolio">Portfolio</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="/about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                        <a href="/contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -46,9 +46,54 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+        <!-- Full Width Image Header -->
+    <header class="header-image"> 
+        <div class="headline">
+            <div class="container">
+        <title>Miss Tschirhart</title>
+                <h1>Erika </h1>
+                <h2>Model. Music. Quarks.</h2>
+            </div>
+        </div>
+    </header>
 </template>
 
 <template name ="portfolio">
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Erika Tschirhart</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="/"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 <!-- Portfolio Grid Section -->
     <section id="portfolio">
     	<a id ="porfolio"> </a>
@@ -150,68 +195,6 @@
                     <!-- <hr class="star-primary"> -->
                 </div>
             </div>
-           <!--  <div class="row">
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/erika-1.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/erika-2.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/erika-3.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-2 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/erika-4.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-2 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/erika-5.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-2 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/erika-6.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div> -->
                     <div class="col-lg-12 text-center">
                     <!-- <h2>Portfolio</h2> -->
                     <hr class="star-primary">
@@ -329,7 +312,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <img src="img/portfolio/erika-6WEB.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/erika-6-big.jpg" class="img-responsive img-centered" alt="">
                         </div>
                     </div>
                 </div>
@@ -348,7 +331,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <img src="img/portfolio/erika-7WEB.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/erika-7-big.jpg" class="img-responsive img-centered" alt="">
                         </div>
                     </div>
                 </div>
@@ -376,20 +359,42 @@
     </div>
 </template>
 
-<template name = "header">
-    <!-- Full Width Image Header -->
-    <header class="header-image"> 
-        <div class="headline">
-            <div class="container">
-        <title>Miss Tschirhart</title>
-                <h1>Erika </h1>
-                <h2>Model. Music. Quarks.</h2>
-            </div>
-        </div>
-    </header>
-</template>
-
 <template name = "about">
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Erika Tschirhart</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="/"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
         <!-- First Featurette -->
         <a id="about"> </a>
         <div class="featurette">
@@ -417,6 +422,41 @@
 </template>
 
 <template name  ="contact">
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Erika Tschirhart</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="/"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 <!-- Contact Section -->
     <section id="contact">
     <a id="contact"> </a>
@@ -456,11 +496,10 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message.">...</textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
-                        <br>
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
